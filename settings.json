@@ -1,18 +1,21 @@
 {
-    // "editor.fontFamily": "Inconsolata, monospace",
-    "editor.fontFamily": "Fira Code, monospace",
+    "editor.fontFamily": "Inconsolata, monospace",
+    // "editor.fontFamily": "Fira Code, monospace",
     // "editor.fontFamily": "Menlo, monospace",
     // "editor.fontFamily": "Px437 ToshibaSat 8x14",
     // "editor.fontFamily": "Px437 IBM EGA 8x14",
     //
     // "editor.fontSize": 16, // IBM
     // "editor.fontSize": 14, // Fira
-    "editor.fontSize": 14, // Menlo
-    // "editor.fontSize": 15, // Inconsolata
+    // "editor.fontSize": 14, // Menlo
+    "editor.fontSize": 15, // Inconsolata
     //
     "editor.fontWeight": "100",
     "editor.fontLigatures": true,
     "editor.tabSize": 4,
+    "editor.rulers": [
+        100
+    ],
     //
     //
     "terminal.integrated.fontFamily": "monospace",
@@ -21,7 +24,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "editor.acceptSuggestionOnCommitCharacter": true,
     "editor.acceptSuggestionOnEnter": "on",
-    "editor.renderIndentGuides": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "editor.cursorStyle": "block",
@@ -33,23 +35,55 @@
     },
     "editor.autoIndent": "full",
     "files.associations": {
-        "*.html": "html"
+        "*.html": "html",
     },
-    "rust.show_warnings": true,
     "workbench.activityBar.visible": true,
     "breadcrumbs.enabled": true,
     "editor.minimap.enabled": false,
     "editor.renderControlCharacters": false,
     "workbench.statusBar.visible": true,
     "window.menuBarVisibility": "classic",
-    "rust-client.channel": "nightly",
-    "[rust]": {
-        "editor.defaultFormatter": null
+    "editor.detectIndentation": true,
+    /* -------------------------------------------------------------------------- */
+    /*                                     GO                                     */
+    /* -------------------------------------------------------------------------- */
+    "go.useLanguageServer": true,
+    "go.lintTool": "golangci-lint",
+    "[go]": {
+        "editor.tabSize": 8,
+        "editor.snippetSuggestions": "none",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
     },
+    "gopls": {
+        "usePlaceholders": true,
+        "completeUnimported": true,
+        "deepCompletion": true,
+        "verboseOutput": true
+    },
+    "go.languageServerFlags": [
+        "-rpc.trace"
+    ],
+    "go.formatTool": "gofmt",
+    "go.autocompleteUnimportedPackages": true,
+    "go.toolsManagement.autoUpdate": true,
+    "go.addTags": {
+        "tags": "json -logfile"
+    },
+    /* -------------------------------------------------------------------------- */
+    /*                                   ERLANG                                   */
+    /* -------------------------------------------------------------------------- */
     "erlang.linting": true,
-    "rust.clippy_preference": "on",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "editor.detectIndentation": false,
+    /* -------------------------------------------------------------------------- */
+    /*                                   JANET                                   */
+    /* -------------------------------------------------------------------------- */
+    "[janet]": {
+        "editor.autoIndent": "keep",
+        "editor.detectIndentation": true,
+        "editor.tabSize": 2,
+    },
     /* -------------------------------------------------------------------------- */
     /*                                 JAVASCRIPT                                 */
     /* -------------------------------------------------------------------------- */
@@ -80,77 +114,23 @@
     },
     /* ----------------------------------- END ---------------------------------- */
     /* -------------------------------------------------------------------------- */
-    /*                                     GO                                     */
+    /*                                    HTML                                    */
     /* -------------------------------------------------------------------------- */
-    "go.useLanguageServer": true,
-    "go.lintTool": "golangci-lint",
-    "[go]": {
-        "editor.tabSize": 8,
-        "editor.snippetSuggestions": "none",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": true
-        }
-    },
-    "gopls": {
-        "usePlaceholders": true,
-        "completeUnimported": true,
-        "deepCompletion": true,
-        "verboseOutput": true
-    },
-    "go.languageServerFlags": [
-        "-rpc.trace"
-    ],
-    "go.formatTool": "gofmt",
-    "go.autocompleteUnimportedPackages": true,
-    "go.toolsManagement.autoUpdate": true,
-    "go.addTags": {
-        "tags": "json -logfile"
-    },
-    /* -------------------------------------------------------------------------- */
-    /*                                      V                                     */
-    /* -------------------------------------------------------------------------- */
-    "[v]": {
-        "editor.tabSize": 8
-    },
-    /* -------------------------------------------------------------------------- */
-    /*                                   CRYSTAL                                  */
-    /* -------------------------------------------------------------------------- */
-    "[crystal]": {
-        "editor.tabSize": 2
-    },
+    "html.autoClosingTags": false,
+    "html.autoCreateQuotes": false,
     /* ----------------------------------- END ---------------------------------- */
     "editor.renderWhitespace": "none",
     "extensions.ignoreRecommendations": true,
     "workbench.iconTheme": "material-icon-theme",
-    "html.autoClosingTags": false,
-    "[svelte]": {
-        "editor.defaultFormatter": "svelte.svelte-vscode"
-    },
     "calva.evalOnSave": true,
     "calva.keybindingsEnabled": false,
     "liveServer.settings.donotVerifyTags": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "workbench.colorTheme": "Min Dark",
-    "terminal.integrated.tabs.enabled": false,
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.allowChords": false,
     "calva.showCalvaSaysOnStart": false,
-    "crystal-lang.bashOnWindows": true,
     "security.workspace.trust.untrustedFiles": "open",
-    /* -------------------------------------------------------------------------- */
-    /*                                     ESY                                    */
-    /* -------------------------------------------------------------------------- */
-    "files.exclude": {
-        "**/_esy": true,
-        "**/.esy": true
-    },
-    "files.watcherExclude": {
-        "**/_esy/**": true,
-        "**/.esy": true
-    },
-    "search.exclude": {
-        "**/_esy": true,
-        "**/.esy": true
-    }
+    "terminal.integrated.enablePersistentSessions": false,
+    "workbench.colorTheme": "Elixir Theme No Italics Less Dark",
+    "liveServer.settings.donotShowInfoMsg": true,
 }
