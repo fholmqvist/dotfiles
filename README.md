@@ -1,4 +1,5 @@
 # DOTFILES
 
-* DWM
+* suckless/DWM
+* suckless/SLSTATUS
 * VSCODE
