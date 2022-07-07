@@ -1,136 +1,64 @@
 {
-    "editor.fontFamily": "Inconsolata, monospace",
-    // "editor.fontFamily": "Fira Code, monospace",
-    // "editor.fontFamily": "Menlo, monospace",
-    // "editor.fontFamily": "Px437 ToshibaSat 8x14",
-    // "editor.fontFamily": "Px437 IBM EGA 8x14",
-    //
-    // "editor.fontSize": 16, // IBM
-    // "editor.fontSize": 14, // Fira
-    // "editor.fontSize": 14, // Menlo
-    "editor.fontSize": 15, // Inconsolata
-    //
-    "editor.fontWeight": "100",
-    "editor.fontLigatures": true,
-    "editor.tabSize": 4,
-    "editor.rulers": [
-        100
-    ],
-    //
-    //
-    "terminal.integrated.fontFamily": "monospace",
-    "terminal.integrated.scrollback": 25000,
-    "editor.codeLens": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.acceptSuggestionOnCommitCharacter": true,
-    "editor.acceptSuggestionOnEnter": "on",
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
+    /*
+        APPEARANCE
+    */
+    "workbench.colorTheme": "Adapta Nokto",
+    "editor.fontFamily": "Inconsolata",
+    "editor.fontWeight": 100,
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
+    "editor.guides.indentation": false,
     "workbench.colorCustomizations": {
-        "editorCursor.foreground": "#f5bb12",
-        "terminal.foreground": "#00bbaa",
+        "editorCursor.foreground": "#ffae00",
+        "terminal.foreground": "#ffae00",
         "terminal.ansiBrightGreen": "#00ff00"
     },
-    "editor.autoIndent": "full",
-    "files.associations": {
-        "*.html": "html",
-    },
-    "workbench.activityBar.visible": true,
-    "breadcrumbs.enabled": true,
-    "editor.minimap.enabled": false,
-    "editor.renderControlCharacters": false,
-    "workbench.statusBar.visible": true,
-    "window.menuBarVisibility": "classic",
-    "editor.detectIndentation": true,
-    /* -------------------------------------------------------------------------- */
-    /*                                     GO                                     */
-    /* -------------------------------------------------------------------------- */
-    "go.useLanguageServer": true,
-    "go.lintTool": "golangci-lint",
-    "[go]": {
-        "editor.tabSize": 8,
-        "editor.snippetSuggestions": "none",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": true
-        }
-    },
-    "gopls": {
-        "usePlaceholders": true,
-        "completeUnimported": true,
-        "deepCompletion": true,
-        "verboseOutput": true
-    },
-    "go.languageServerFlags": [
-        "-rpc.trace"
+    "editor.rulers": [
+        80, 120
     ],
-    "go.formatTool": "gofmt",
-    "go.autocompleteUnimportedPackages": true,
-    "go.toolsManagement.autoUpdate": true,
-    "go.addTags": {
-        "tags": "json -logfile"
-    },
-    /* -------------------------------------------------------------------------- */
-    /*                                   ERLANG                                   */
-    /* -------------------------------------------------------------------------- */
-    "erlang.linting": true,
-    /* -------------------------------------------------------------------------- */
-    /*                                   JANET                                   */
-    /* -------------------------------------------------------------------------- */
-    "[janet]": {
-        "editor.autoIndent": "keep",
-        "editor.detectIndentation": true,
-        "editor.tabSize": 2,
-    },
-    /* -------------------------------------------------------------------------- */
-    /*                                 JAVASCRIPT                                 */
-    /* -------------------------------------------------------------------------- */
-    "[javascript]": {
-        "editor.tabSize": 8
-    },
-    /* -------------------------------------------------------------------------- */
-    /*                                   FSHARP                                   */
-    /* -------------------------------------------------------------------------- */
-    //
-    // "[fsharp]": {
-    //     "editor.useTabStops": false,
-    // },
-    // "FSharp.lineLens.enabled": "always",
-    // "FSharp.useSdkScripts": true,
-    // "FSharp.suggestGitignore": false,
-    // "FSharp.disableFailedProjectNotifications": true,
-    // "FSharp.enableReferenceCodeLens": false,
-    // "FSharp.enableTouchBar": false,
-    // "FSharp.externalAutocomplete": true,
-    //
-    /* -------------------------------------------------------------------------- */
-    /*                                   ELIXIR                                   */
-    /* -------------------------------------------------------------------------- */
-    "[elixir]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true
-    },
-    /* ----------------------------------- END ---------------------------------- */
-    /* -------------------------------------------------------------------------- */
-    /*                                    HTML                                    */
-    /* -------------------------------------------------------------------------- */
-    "html.autoClosingTags": false,
-    "html.autoCreateQuotes": false,
-    /* ----------------------------------- END ---------------------------------- */
-    "editor.renderWhitespace": "none",
-    "extensions.ignoreRecommendations": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "calva.evalOnSave": true,
-    "calva.keybindingsEnabled": false,
-    "liveServer.settings.donotVerifyTags": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "terminal.integrated.allowChords": false,
-    "calva.showCalvaSaysOnStart": false,
-    "security.workspace.trust.untrustedFiles": "open",
+    /*
+    TURNING OFF FEATURES
+    */
+    "editor.minimap.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.startupEditor": "none",
     "terminal.integrated.enablePersistentSessions": false,
-    "workbench.colorTheme": "Elixir Theme No Italics Less Dark",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "html.autoCreateQuotes": false,
+    "javascript.preferences.quoteStyle": "single",
     "liveServer.settings.donotShowInfoMsg": true,
+    /*
+        FILE SETTINGS
+    */
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true
+    },
+    "files.associations": {
+        "*.go": "go",
+        "*.html": "html",
+        "*.qtpl": "html"
+    },
+    /*
+        LANGUAGE SPECIFIC
+    */
+    "go.toolsManagement.autoUpdate": true,
+    "[crystal]": {
+        "editor.tabSize": 2
+    },
+    "[ruby]": {
+        "editor.tabSize": 2
+    },
+    "[erb]": {
+        "editor.tabSize": 2
+    },
+    "calva.paredit.hijackVSCodeDefaults": true,
+    "calva.paredit.defaultKeyMap": "none"
 }
