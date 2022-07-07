@@ -8,11 +8,6 @@
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
     "editor.guides.indentation": false,
-    "workbench.colorCustomizations": {
-        "editorCursor.foreground": "#ffae00",
-        "terminal.foreground": "#ffae00",
-        "terminal.ansiBrightGreen": "#00ff00"
-    },
     "editor.rulers": [
         80, 120
     ],

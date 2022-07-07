@@ -1,0 +1,4 @@
+# DOTFILES
+
+* DWM
+* VSCODE
