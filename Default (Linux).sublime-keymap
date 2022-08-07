@@ -1,0 +1,22 @@
+[
+	{ 
+		"keys": ["ctrl+enter"], 
+		"command": "run_macro_file", 
+		"args": {
+			"file": "res://Packages/Default/Add Line Before.sublime-macro"
+		} 
+	},
+	{
+		"keys": ["alt+up"],
+		"command": "swap_line_up"
+	},
+	{
+		"keys": ["alt+down"],
+		"command": "swap_line_down"
+	},
+	{ 
+		"keys": ["ctrl+k", "ctrl+d"], 
+		"command": "reindent" , 
+		"args": { "single_line": false } 
+	}
+]
