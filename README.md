@@ -2,4 +2,4 @@
 
 * suckless/DWM
 * suckless/SLSTATUS
-* VSCODE
+* sublime/[settings, keybindings, packages]
