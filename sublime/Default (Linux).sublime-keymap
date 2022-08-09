@@ -18,5 +18,17 @@
 		"keys": ["ctrl+k", "ctrl+d"], 
 		"command": "reindent" , 
 		"args": { "single_line": false } 
-	}
+	},
+	{
+		"keys": ["ctrl+k", "ctrl+c"],
+		"command": "toggle_comment"
+	},
+	{
+		"keys": ["ctrl+k", "ctrl+u"],
+		"command": "toggle_comment"
+	},
+	{
+		"keys": ["ctrl+j"], 
+		"command": "toggle_terminus_panel"
+	},
 ]
