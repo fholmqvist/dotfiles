@@ -31,4 +31,8 @@
 		"keys": ["ctrl+j"], 
 		"command": "toggle_terminus_panel"
 	},
+	{
+		"keys": ["ctrl+r", "ctrl+r"],
+		"command": "lsp_symbol_rename"
+	}
 ]
