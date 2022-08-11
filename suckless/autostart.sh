@@ -1,9 +1,16 @@
-xrandr -s 1280x720
+# Set resolution
+# xrandr -s 1280x720
+xrandr --newmode "1280x720_60.00"  74.48  1280 1336 1472 1664  720 721 724 746  -HSync +Vsync
+xrandr --addmode eDP1 "1280x720_60.00"
+xrandr --addmode eDP1 "1280x720_60.00"
+xrandr --output eDP1 --mode "1280x720_60.00"
+
+# Fix trackpad
 id=`xinput list \
     | grep "Elan Touchpad" \
     | cut -d'=' -f2 \
     | cut -d'[' -f1` 
-xinput set-prop $id 306 1 # Touch click
-xinput set-prop $id 324 1 # Touch click
-xinput set-prop $id 314 1 # Natural scroll
+xinput set-prop $id 306 1
+xinput set-prop $id 324 1
+xinput set-prop $id 314 1
 slstatus &
