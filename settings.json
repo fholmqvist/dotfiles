@@ -1,0 +1,75 @@
+{
+    /*
+        APPEARANCE
+    */
+    "workbench.colorTheme": "Popping and Locking Black Theme",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "Inconsolata",
+    "editor.fontSize": 18,
+    "editor.fontWeight": 100,
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "solid",
+    "editor.guides.indentation": false,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    /*
+        BEHAVIOUR
+    */
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    /*
+        TURNING OFF FEATURES
+    */
+    "window.titleBarStyle": "custom",
+    "window.customMenuBarAltFocus": false,
+    "editor.minimap.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "workbench.startupEditor": "none",
+    "html.autoCreateQuotes": false,
+    "javascript.preferences.quoteStyle": "single",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "extensions.ignoreRecommendations": true,
+    /*
+        FILE SETTINGS
+    */
+    "files.insertFinalNewline": true,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true
+    },
+    "files.associations": {
+        "*.go": "go",
+        "*.html": "html",
+        "*.qtpl": "html"
+    },
+    /*
+        TERMINAL
+    */
+    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.scrollback": 25000,
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    /*
+        CALVA
+    */
+    "calva.showCalvaSaysOnStart": false,
+    "calva.paredit.hijackVSCodeDefaults": true,
+    /*
+        LANGUAGE SPECIFIC
+    */
+    "go.toolsManagement.autoUpdate": true,
+    "C_Cpp.default.includePath": [
+        "${workspace}/**",
+        "/usr/local/include/**"
+    ]
+}
