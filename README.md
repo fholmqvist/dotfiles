@@ -17,6 +17,7 @@ $ cd ~/
 $ mkdir -p suckless
 $ cd suckless
 $ git clone https://git.suckless.org/dwm
+$ cd dwm
 $ wget http://dwm.suckless.org/patches/autostart/dwm-autostart-20210120-cb3f58a.diff
 $ git apply dwm-autostart-20210120-cb3f58a.diff
 $ cp ~/dotfiles/suckless/dwm_config.def.h config.def.h
