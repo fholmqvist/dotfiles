@@ -6,6 +6,12 @@
 
 ## HOW TO INSTALL
 
+**PRE-REQUISITES**
+```
+$ sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm
+```
+
+**THESE FILES**
 ```
 $ cd ~/
 $ git clone https://github.com/Holmqvist1990/dotfiles
