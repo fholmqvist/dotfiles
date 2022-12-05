@@ -2,18 +2,14 @@
     /*
         APPEARANCE
     */
-    "workbench.colorTheme": "Popping and Locking Black Theme",
+    "workbench.colorTheme": "paddy-black-upright",
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "Inconsolata",
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.fontWeight": 100,
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
     "editor.guides.indentation": false,
-    "editor.rulers": [
-        80,
-        120
-    ],
     /*
         BEHAVIOUR
     */
@@ -68,6 +64,12 @@
         LANGUAGE SPECIFIC
     */
     "go.toolsManagement.autoUpdate": true,
+    "[go]": {
+        "editor.tabSize": 8,
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+    },
     "C_Cpp.default.includePath": [
         "${workspace}/**",
         "/usr/local/include/**"
