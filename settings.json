@@ -247,11 +247,15 @@
           "storage.type.numeric.go",
           "support.function.builtin.go",
           "storage.type.error.go",
+          "keyword.import.go",
+          "keyword.package.go",
+          "entity.alias.import.go",
           "punctuation.definition.comment.go",
           "comment.line.double-slash.go",
           "source.rust meta.attribute.rust",
           "keyword.control.import.tsx",
-          "keyword.control.export.tsx"
+          "keyword.control.export.tsx",
+          "variable.other.property.tsx"
         ],
         "settings": {
           "fontStyle": ""
