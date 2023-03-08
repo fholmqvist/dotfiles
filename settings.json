@@ -5,7 +5,7 @@
 
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontFamily": "Berkeley Mono",
-  "workbench.colorTheme": "NotFlask Theme Dark",
+  "workbench.colorTheme": "Houston",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.fontWeight": 100,
@@ -252,6 +252,8 @@
           "entity.alias.import.go",
           "punctuation.definition.comment.go",
           "comment.line.double-slash.go",
+          "storage.type.string.go",
+          "storage.type.boolean.go",
           "source.rust meta.attribute.rust",
           "keyword.control.import.tsx",
           "keyword.control.export.tsx",
