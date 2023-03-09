@@ -257,7 +257,8 @@
           "source.rust meta.attribute.rust",
           "keyword.control.import.tsx",
           "keyword.control.export.tsx",
-          "variable.other.property.tsx"
+          "variable.other.property.tsx",
+          "entity.other.attribute-name.tsx"
         ],
         "settings": {
           "fontStyle": ""
