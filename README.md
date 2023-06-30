@@ -39,6 +39,16 @@ $ cp ~/dotfiles/suckless/sls_config.def.h config.def.h
 $ sudo clean make install
 ```
 
+**ST**
+```
+$ cd ~/suckless
+$ git clone https://git.suckless.org/st
+$ cd st
+$ wget https://st.suckless.org/patches/scrollback/st-scrollback-0.8.5.diff
+$ git apply st-scrollback-0.8.5.diff
+$ sudo make clean install
+```
+
 **autostart.sh**
 ```
 $ cd ~/
