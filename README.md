@@ -7,11 +7,7 @@ Contains settings for the following programs:
 * [suckless/st](https://st.suckless.org/)
 * [vscode](https://code.visualstudio.com/)
 
-&nbsp;
-
 `Makefile` installs these.
-
-&nbsp;
 
 ## HOW TO INSTALL
 
