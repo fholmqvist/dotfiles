@@ -4,10 +4,27 @@
   */
 
   "workbench.iconTheme": "material-icon-theme",
+
   "editor.fontFamily": "Berkeley Mono",
-  "workbench.colorTheme": "NotFlask Theme Dark",
-  "editor.fontLigatures": true,
   "editor.fontSize": 16,
+
+  // "editor.fontFamily": "Ac437 ITT Xtra",
+  // "editor.fontSize": 12,
+
+  // "editor.fontFamily": "Ac437 Verite 9x16",
+  // "editor.fontSize": 18,
+
+  // "editor.fontFamily": "Ac437 OlivettiThin 9x16",
+  // "editor.fontSize": 20,
+
+  // "editor.fontFamily": "Ac437 Sigma RM 9x16",
+  // "editor.fontSize": 18,
+
+  // "editor.fontFamily": "Ac437 PhoenixVGA 9x16",
+  // "editor.fontSize": 18,
+
+  "workbench.colorTheme": "paddy-black-upright",
+  "editor.fontLigatures": true,
   "editor.fontWeight": 100,
   "editor.cursorStyle": "block",
   "editor.cursorBlinking": "solid",
@@ -43,7 +60,7 @@
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
-    "**/node_modules/*/**": true,
+    "**/node_modules/**": true,
     "**/.hg/store/**": true
   },
   "search.exclude": {
@@ -54,7 +71,10 @@
   "files.associations": {
     "*.go": "go",
     "*.html": "html",
-    "*.qtpl": "html"
+    "*.qtpl": "html",
+    "*.heex": "phoenix-heex",
+    "*.gohtml": "go",
+    "*.lock": "yaml"
   },
 
   /*
@@ -89,16 +109,38 @@
   },
   "[fennel]": {
     "editor.detectIndentation": false,
-    "editor.tabSize": 2,
+    "editor.tabSize": 2
   },
   "[janet]": {
     "editor.detectIndentation": false,
+    "editor.tabSize": 2
+  },
+  "[ocaml]": {
+    "editor.defaultFormatter": "ocamllabs.ocaml-platform",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2
+  },
+  "[crystal]": {
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2
+  },
+  "[ruby]": {
+    "editor.detectIndentation": false,
     "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.insertSpaces": true,
+    "editor.semanticHighlighting.enabled": true
+  },
+  "[erlang]": {
+    "editor.defaultFormatter": "erlang-ls.erlang-ls",
+    "editor.codeLens": false
   },
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "rust-analyzer.inlayHints.typeHints.enable": false,
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
   "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "rust-analyzer.lens.enable": false,
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -117,7 +159,10 @@
     "editor.tabSize": 2
   },
   "elixirLS.suggestSpecs": false,
-  "terminal.external.linuxExec": "alactritty",
+  "elixirLS.dialyzerEnabled": true,
+  "elixirLS.signatureAfterComplete": true,
+  "elixirLS.fetchDeps": false,
+  "terminal.external.linuxExec": "st",
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -268,5 +313,38 @@
     ]
   },
   "svelte.enable-ts-plugin": true,
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "files.trimTrailingWhitespace": true,
+  "editor.rulers": [120],
+  "crystal-lang.hover": true,
+  "crystal-lang.completion": true,
+  "crystal-lang.implementations": true,
+  "crystal-lang.server": "/usr/bin/crystalline",
+  "zig.zls.path": "/home/holmqvist/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+  "zig.zls.enableInlayHints": false,
+  "haskell.manageHLS": "GHCup",
+  "haskell.ghcupExecutablePath": "/home/holmqvist/.ghcup/bin/ghcup",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    },
+    "st": {
+      "path": "/usr/local/bin/st"
+    }
+  }
 }
