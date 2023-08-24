@@ -35,9 +35,16 @@ autostart:
 	cp ~/dotfiles/suckless/autostart.sh autostart.sh
 	chmod 777 autostart.sh
 
+mplanner:
+	cd /tmp
+	git clone https://github.com/Holmqvist1990/mplanner
+	cd mplanner
+	make install
+	rm -rf /tmp/mplanner
+
 code:
-	echo "apt install code"
+	apt install code
 
-install: suckless dwm slstatus st autostart code
+install: suckless dwm slstatus st autostart mplanner
 
-.PHONY: clean suckless dwm slstatus st autostart code install
+.PHONY: clean suckless dwm slstatus st autostart code install mplanner
