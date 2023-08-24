@@ -23,12 +23,13 @@
   // "editor.fontFamily": "Ac437 PhoenixVGA 9x16",
   // "editor.fontSize": 18,
 
-  "workbench.colorTheme": "paddy-black-upright",
+  "workbench.colorTheme": "Infinity Dark",
   "editor.fontLigatures": true,
   "editor.fontWeight": 100,
   "editor.cursorStyle": "block",
   "editor.cursorBlinking": "solid",
   "editor.guides.indentation": false,
+  "editor.bracketPairColorization.enabled": false,
 
   /*
           BEHAVIOUR
@@ -61,10 +62,14 @@
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/node_modules/**": true,
-    "**/.hg/store/**": true
+    "**/.hg/store/**": true,
+    "**/__mocks__/**": true,
+    "**/__generated__/**": true
   },
   "search.exclude": {
-    "**/node_modules": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
     "**/bower_components": true,
     "**/*.code-search": true
   },
@@ -93,6 +98,21 @@
   "calva.showCalvaSaysOnStart": false,
   "calva.paredit.hijackVSCodeDefaults": true,
   "calva.jackInEnv": {
+    "BREYTA_DEV_USER_ID": "5jyo7slEfBMlnOSaRP8Z1LXFS4a2",
+    "BREYTA_SERVICE_ENVIRONMENT": "DEVELOPMENT",
+    "AIRBYTE_API_URL": "http://localhost:8001/api",
+    "AIRBYTE_DB_URL": "jdbc:postgresql://localhost:9001/airbyte?user=docker&password=docker",
+    "DB_POSTGRES_DATABASE": "dev",
+    "DB_POSTGRES_HOST": "localhost",
+    "DB_POSTGRES_PORT": "3307",
+    "DB_POSTGRES_USER": "postgres",
+    "GCP_PROJECT": "breyta-dev",
+    "BIG_QUERY_PROJECT_ID": "breyta-dev",
+    "BIG_QUERY_UDF_GCS_BUCKET": "breyta_bq_udfs",
+    "GRAPHQL_SERVER_PORT": "8888",
+    "GMAIL_API_URL": "https://gmail.googleapis.com",
+    "OAUTH_REDIRECT_URI": "https://oauth-dev.breyta.io/integration/install",
+    "GOOGLE_APPLICATION_CREDENTIALS": "/home/holmqvist/.config/gcloud/application_default_credentials.json"
   },
 
   /*
@@ -103,6 +123,12 @@
   "[go]": {
     "editor.tabSize": 8
   },
+  "FSharp.inlayHints.enabled": false,
+  "FSharp.inlayHints.parameterNames": false,
+  "FSharp.inlayHints.typeAnnotations": false,
+  "FSharp.pipelineHints.enabled": false,
+  "FSharp.codeLenses.references.enabled": false,
+  "FSharp.codeLenses.signature.enabled": false,
   "[lua]": {
     "editor.detectIndentation": false,
     "editor.tabSize": 2
@@ -322,6 +348,7 @@
   "crystal-lang.server": "/usr/bin/crystalline",
   "zig.zls.path": "/home/holmqvist/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
   "zig.zls.enableInlayHints": false,
+  "zig.zigPath": "/usr/bin/zig/zig",
   "haskell.manageHLS": "GHCup",
   "haskell.ghcupExecutablePath": "/home/holmqvist/.ghcup/bin/ghcup",
   "terminal.integrated.profiles.linux": {
