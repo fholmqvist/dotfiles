@@ -98,10 +98,6 @@
   "calva.showCalvaSaysOnStart": false,
   "calva.paredit.hijackVSCodeDefaults": true,
   "calva.jackInEnv": {
-    "BIG_QUERY_PROJECT_ID": "breyta-dev",
-    "BIG_QUERY_UDF_GCS_BUCKET": "breyta_bq_udfs",
-    "OAUTH_REDIRECT_URI": "https://oauth-dev.breyta.io/integration/install",
-    "GOOGLE_APPLICATION_CREDENTIALS": "/home/holmqvist/.config/gcloud/application_default_credentials.json"
   },
 
   /*
