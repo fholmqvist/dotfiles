@@ -1,5 +1,8 @@
 .ONESHELL:
 
+prereq:
+	sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm
+
 clean:
 	rm -rf ~/suckless
 	rm -rf ~/.dwm
@@ -45,6 +48,6 @@ mplanner:
 code:
 	apt install code
 
-install: suckless dwm slstatus st autostart mplanner
+install: prereq suckless dwm slstatus st autostart mplanner
 
-.PHONY: clean suckless dwm slstatus st autostart code install mplanner
+.PHONY: prereq clean suckless dwm slstatus st autostart code install mplanner

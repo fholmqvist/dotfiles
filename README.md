@@ -9,20 +9,15 @@ Contains settings for the following programs:
 
 `Makefile` installs these.
 
-## HOW TO INSTALL
+## Installation
 
-1. **INSTALL PRE-REQUISITES**
-    ```bash
-    $ sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm
-    ```
-
-2. **CLONE THIS REPO**
+1. **Clone repo**
     ```bash
     cd ~/
     git clone https://github.com/Holmqvist1990/dotfiles
     ```
 
-3. **RUN MAKEFILE**
+1. **Run makefile**
     ```bash
     cd ~/dotfiles
     make clean install
