@@ -8,4 +8,4 @@ IndentCaseBlocks: true
 IndentCaseLabels: true
 PointerAlignment: Left
 ReferenceAlignment: Right
-SeparateDefinitionBlocks: true
+SeparateDefinitionBlocks: Always
