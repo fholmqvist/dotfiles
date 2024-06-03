@@ -1,7 +1,11 @@
 .ONESHELL:
 
 prereq:
-	sudo apt-get install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm
+	sudo apt-get -y install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm
+	sudo apt-get -y install dwm
+	sudo cp /usr/share/xsessions/dwm.desktop{,.bak}
+	sudo apt-get purge dwm
+	sudo mv /usr/share/xsessions/dwm.desktop{.bak,}
 
 clean:
 	rm -rf ~/suckless
@@ -16,20 +20,17 @@ dwm:
 	cd dwm
 	wget http://dwm.suckless.org/patches/autostart/dwm-autostart-20210120-cb3f58a.diff
 	git apply dwm-autostart-20210120-cb3f58a.diff
-	cp ~/dotfiles/suckless/dwm_config.def.h config.def.h
+	cp ~/dotfiles/suckless/dwm_config.def.h config.h
 
 slstatus:
 	cd ~/suckless
 	git clone https://git.suckless.org/slstatus
 	cd slstatus
-	cp ~/dotfiles/suckless/sls_config.def.h config.def.h
+	cp ~/dotfiles/suckless/sls_config.def.h config.h
 
 st:
 	cd ~/suckless
 	git clone https://git.suckless.org/st
-	cd st
-	wget https://st.suckless.org/patches/scrollback/st-scrollback-0.8.5.diff
-	git apply st-scrollback-0.8.5.diff
 
 autostart:
 	cd ~/
@@ -46,7 +47,7 @@ mplanner:
 	rm -rf /tmp/mplanner
 
 code:
-	apt install code
+	apt-get -y install code
 
 install: prereq suckless dwm slstatus st autostart mplanner
 
