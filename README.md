@@ -14,7 +14,7 @@ Contains settings for the following programs:
 1. **Clone repo**
     ```bash
     cd ~/
-    git clone https://github.com/Holmqvist1990/dotfiles
+    git clone https://github.com/fholmqvist/dotfiles
     ```
 
 1. **Run makefile**
