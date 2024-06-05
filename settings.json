@@ -88,8 +88,12 @@
 
   "terminal.integrated.fontFamily": "monospace",
   "terminal.integrated.scrollback": 25000,
-  "terminal.integrated.enablePersistentSessions": false,
-  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.enablePersistentSessions": false,    
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.env.linux": {
+    "EDITOR": "code --wait",
+    "GIT_EDITOR": "code --wait"
+  },
 
   /*
           CALVA
