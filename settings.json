@@ -79,7 +79,8 @@
     "*.qtpl": "html",
     "*.heex": "phoenix-heex",
     "*.gohtml": "go",
-    "*.lock": "yaml"
+    "*.lock": "yaml",
+    "*.gost": "lisp"
   },
 
   /*
@@ -88,7 +89,7 @@
 
   "terminal.integrated.fontFamily": "monospace",
   "terminal.integrated.scrollback": 25000,
-  "terminal.integrated.enablePersistentSessions": false,    
+  "terminal.integrated.enablePersistentSessions": false,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.env.linux": {
     "EDITOR": "code --wait",
