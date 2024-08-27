@@ -1,2 +1,1 @@
-alias axis='code ~/programming/notes/axis.txt'
 alias personal='code ~/programming/notes/personal.txt'
