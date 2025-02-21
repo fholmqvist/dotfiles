@@ -1,6 +1,5 @@
 IndentWidth: 4
-ColumnLimit: 80
-IndentAccessModifiers: true
+ColumnLimit: 100
 AllowShortFunctionsOnASingleLine: false
 AllowShortBlocksOnASingleLine: true
 AllowShortEnumsOnASingleLine: false
@@ -10,3 +9,4 @@ PointerAlignment: Left
 ReferenceAlignment: Right
 SeparateDefinitionBlocks: Always
 Cpp11BracedListStyle: false
+InsertBraces: true
