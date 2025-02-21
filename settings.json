@@ -8,21 +8,6 @@
   "editor.fontFamily": "Berkeley Mono",
   "editor.fontSize": 16,
 
-  // "editor.fontFamily": "Ac437 ITT Xtra",
-  // "editor.fontSize": 12,
-
-  // "editor.fontFamily": "Ac437 Verite 9x16",
-  // "editor.fontSize": 18,
-
-  // "editor.fontFamily": "Ac437 OlivettiThin 9x16",
-  // "editor.fontSize": 20,
-
-  // "editor.fontFamily": "Ac437 Sigma RM 9x16",
-  // "editor.fontSize": 18,
-
-  // "editor.fontFamily": "Ac437 PhoenixVGA 9x16",
-  // "editor.fontSize": 18,
-
   "workbench.colorTheme": "Infinity Dark",
   "editor.fontLigatures": true,
   "editor.fontWeight": 100,
