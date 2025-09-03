@@ -13,7 +13,9 @@ Various settings and files to setting up a new machine.
 
 ### Prepreqs
 ```bash
-sudo apt-get -y install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm
+sudo apt update
+sudo apt upgrade
+sudo apt -y install build-essential cmake libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm
 ```
 
 ### DWM
