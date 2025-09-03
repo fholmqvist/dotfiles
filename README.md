@@ -1,24 +1,65 @@
-# DOTFILES
+# Setup
 
-Contains settings for the following programs:
+Various settings and files to setting up a new machine.
 
 * [suckless/dwm](https://dwm.suckless.org/)
 * [suckless/slstatus](https://tools.suckless.org/slstatus/)
 * [suckless/st](https://st.suckless.org/)
 * [vscode](https://code.visualstudio.com/)
+* [clangd](https://clangd.llvm.org/)
+* [Berkeley Mono](https://usgraphics.com/)
 
-`Makefile` installs these.
+## Installation notes
 
-## Installation
+### Prepreqs
+```bash
+sudo apt-get -y install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm
+```
 
-1. **Clone repo**
-    ```bash
-    cd ~/
-    git clone https://github.com/fholmqvist/dotfiles
-    ```
+### DWM
 
-1. **Run makefile**
-    ```bash
-    cd ~/dotfiles
-    make clean install
-    ```
+Might require additional line:
+
+`static int refreshrate = 60;`
+
+```bash
+git clone https://git.suckless.org/dwm
+cd dwm
+wget http://dwm.suckless.org/patches/autostart/dwm-autostart-20210120-cb3f58a.diff
+git apply dwm-autostart-20210120-cb3f58a.diff
+cp ../dotfiles/dwm_config.def.h config.h
+sudo make clean install
+```
+
+Sometimes some dependencies aren't available, in which you can install by apt first:
+```bash
+sudo apt install dwm
+```
+
+Remember to `make clean install` after to override.
+
+### SLSTATUS
+```bash
+git clone https://git.suckless.org/slstatus
+cd slstatus
+cp ../dotfiles/sls_config.def.h config.h
+sudo make clean install
+```
+
+### Berkeley Mono
+
+Download from [website](https://usgraphics.com/).
+
+```bash
+mkdir -p ~/.local/share/fonts
+# unzip there
+sudo fc-cache -fv
+```
+
+### Vscode
+
+See [installation instructors for Linux](https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux).
+
+### Clangd
+
+Automatically installed via Vscode plugin.

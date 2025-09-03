@@ -1,2 +1,0 @@
-slstatus &
-exec dwm

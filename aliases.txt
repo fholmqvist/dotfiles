@@ -1,1 +1,0 @@
-alias personal='code ~/programming/notes/personal.txt'

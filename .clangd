@@ -1,4 +1,17 @@
+CompileFlags:
+  Add: [
+    -Wall,
+    -Wextra,
+    -Wno-unused-function,
+    -Wno-unused-variable,
+    -x, c,
+    -std=c11
+]
+
 InlayHints:
-  Enabled: Yes
+  Enabled: No
   ParameterNames: No
   DeducedTypes: No
+
+Diagnostics:
+  Suppress: builtin_definition

@@ -7,8 +7,6 @@
 
   "editor.fontFamily": "Berkeley Mono",
   "editor.fontSize": 16,
-
-  "workbench.colorTheme": "Infinity Dark",
   "editor.fontLigatures": true,
   "editor.fontWeight": 100,
   "editor.cursorStyle": "block",
@@ -35,7 +33,6 @@
   "workbench.startupEditor": "none",
   "html.autoCreateQuotes": false,
   "javascript.preferences.quoteStyle": "single",
-  "liveServer.settings.donotShowInfoMsg": true,
   "extensions.ignoreRecommendations": true,
 
   /*
@@ -64,8 +61,7 @@
     "*.qtpl": "html",
     "*.heex": "phoenix-heex",
     "*.gohtml": "go",
-    "*.lock": "yaml",
-    "*.gost": "lisp"
+    "*.lock": "yaml"
   },
 
   /*
@@ -98,12 +94,6 @@
   "[go]": {
     "editor.tabSize": 8
   },
-  "FSharp.inlayHints.enabled": false,
-  "FSharp.inlayHints.parameterNames": false,
-  "FSharp.inlayHints.typeAnnotations": false,
-  "FSharp.pipelineHints.enabled": false,
-  "FSharp.codeLenses.references.enabled": false,
-  "FSharp.codeLenses.signature.enabled": false,
   "[lua]": {
     "editor.detectIndentation": false,
     "editor.tabSize": 2
@@ -113,15 +103,6 @@
     "editor.tabSize": 2
   },
   "[janet]": {
-    "editor.detectIndentation": false,
-    "editor.tabSize": 2
-  },
-  "[ocaml]": {
-    "editor.defaultFormatter": "ocamllabs.ocaml-platform",
-    "editor.detectIndentation": false,
-    "editor.tabSize": 2
-  },
-  "[crystal]": {
     "editor.detectIndentation": false,
     "editor.tabSize": 2
   },
@@ -137,16 +118,10 @@
     "editor.defaultFormatter": "erlang-ls.erlang-ls",
     "editor.codeLens": false
   },
-  "rust-analyzer.inlayHints.parameterHints.enable": false,
-  "rust-analyzer.inlayHints.typeHints.enable": false,
-  "rust-analyzer.inlayHints.closingBraceHints.enable": false,
-  "rust-analyzer.inlayHints.chainingHints.enable": false,
-  "rust-analyzer.lens.enable": false,
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "C_Cpp.default.includePath": ["${workspace}/**", "/usr/local/include/**"],
   "security.workspace.trust.untrustedFiles": "open",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -156,13 +131,6 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[elixir]": {
-    "editor.tabSize": 2
-  },
-  "elixirLS.suggestSpecs": false,
-  "elixirLS.dialyzerEnabled": true,
-  "elixirLS.signatureAfterComplete": true,
-  "elixirLS.fetchDeps": false,
   "terminal.external.linuxExec": "st",
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -313,19 +281,9 @@
       }
     ]
   },
-  "svelte.enable-ts-plugin": true,
   "git.openRepositoryInParentFolders": "never",
   "files.trimTrailingWhitespace": true,
   "editor.rulers": [120],
-  "crystal-lang.hover": true,
-  "crystal-lang.completion": true,
-  "crystal-lang.implementations": true,
-  "crystal-lang.server": "/usr/bin/crystalline",
-  "zig.zls.path": "/home/holmqvist/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
-  "zig.zls.enableInlayHints": false,
-  "zig.zigPath": "/usr/bin/zig/zig",
-  "haskell.manageHLS": "GHCup",
-  "haskell.ghcupExecutablePath": "/home/holmqvist/.ghcup/bin/ghcup",
   "terminal.integrated.profiles.linux": {
     "bash": {
       "path": "bash",
@@ -348,5 +306,6 @@
     "st": {
       "path": "/usr/local/bin/st"
     }
-  }
+  },
+  "workbench.colorTheme": "hacker dark blue light PRO"
 }
