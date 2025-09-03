@@ -60,6 +60,14 @@ sudo fc-cache -fv
 
 See [installation instructors for Linux](https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux).
 
+**Plugins:**
+* clangd
+* Go
+* hacker dark PRO
+* Material Icon Theme
+* Prettier - Code formatter
+* Visual Studio Keymap
+
 ### Clangd
 
 Automatically installed via Vscode plugin.
